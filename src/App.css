@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: pink;
+  display: flex;
+}
+
+h1 {
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 250;
+}
+
+.editable {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(244, 193, 234, 1) 0%,
+    rgba(255, 253, 134, 1) 66%,
+    rgba(119, 232, 255, 1) 100%
+  );
+  width: 50%;
+  max-height: 100vh;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.final {
+  background-color: rgb(255, 255, 255);
+  width: 210mm !important;
+  height: 290mm !important;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 100vh;
+  margin-bottom: 2rem;
+}
+
+/* style for the builder */
+textArea {
+  width: 40vw;
+  border-radius: 3px;
+  border: 1px solid rgb(202, 200, 200);
+  margin: 1rem 0 1rem 0;
+}
+
+textArea::placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 3em;
+  text-align: center;
+}
+
+.mainInfo,
+.jobs,
+.textArea,
+input {
+  margin: 0.5vw;
+}
+.mainInfo,
+.submit {
+  margin-bottom: 1rem;
+}
+.imgBtn,
+.jobs,
+.education {
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 19.5vw;
+}
+
+/* style for the CV */
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+  grid-template-areas:
+    "cvName cvName"
+    "cvJobs image"
+    "cvJobs cvMainInfo"
+    "cvStudies cvInterests";
+}
+
+.wrapper {
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cvName {
+  grid-area: cvName;
+}
+
+.cvComments {
+  width: 48vw;
+  line-height: 1rem;
+  margin: 1rem 2rem 2rem 2rem;
+  border: 0.5px solid rgb(180, 180, 247);
+  padding: 0.8rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.emptyIntro {
+  background-color: #f4c1ea;
+  width: 48vw;
+  line-height: 1rem;
+  margin: 1rem 2rem 2rem 2rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}
+
+.image {
+  grid-area: image;
+}
+
+.picStyle {
+  border-radius: 50%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(244, 193, 234, 1) 0%,
+    rgba(245, 240, 151, 1) 100%,
+    rgba(119, 232, 255, 1) 100%
+  );
+  height: 80%;
+  width: 60%;
+  margin-left: 3rem;
+}
+
+.cvImg {
+  width: 60%;
+  border-radius: 50%;
+}
+
+.cvIntro {
+  grid-area: cvIntro;
+}
+.cvMainInfo {
+  height: 20vh;
+  border-radius: 5px;
+  grid-area: cvMainInfo;
+  margin-left: 2.9rem;
+  text-align: justify;
+  width: 60%;
+}
+
+.emptyInfo {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(246, 227, 242, 1) 0%,
+    rgba(247, 233, 182, 1) 0%,
+    rgba(249, 241, 113, 1) 26%,
+    rgba(232, 242, 157, 1) 100%,
+    rgba(195, 245, 255, 1) 100%
+  );
+  border-radius: 5px;
+  grid-area: cvMainInfo;
+  margin: 1rem 0 0 2.9rem;
+  padding: 1rem;
+  text-align: center;
+  width: 60%;
+}
+
+.cvJobs {
+  grid-area: cvJobs;
+  border-radius: 5px;
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.emptyJobs {
+  grid-area: cvJobs;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(244, 193, 234, 1) 0%,
+    rgba(245, 239, 118, 1) 100%,
+    rgba(119, 232, 255, 1) 100%
+  );
+  border-radius: 5px;
+  margin: 0rem 0 2rem 2rem;
+
+  padding-bottom: 1rem;
+}
+
+.cvStudies {
+  grid-area: cvStudies;
+  border-radius: 5px;
+  margin: 0rem 0 2rem 2rem;
+}
+
+.emptyStudies {
+  grid-area: cvStudies;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(244, 193, 234, 1) 0%,
+    rgba(245, 240, 151, 1) 0%,
+    rgba(119, 232, 255, 1) 100%
+  );
+  border-radius: 5px;
+  margin: 0rem 0 2rem 2rem;
+}
+.cvInterests {
+  grid-area: cvInterests;
+  border-radius: 5px;
+  margin: 2rem 0 2rem 2.9rem;
+  text-align: justify;
+  width: 60%;
+  line-height: 15px;
+}
+
+.emptyInterests {
+  grid-area: cvInterests;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(244, 193, 234, 1) 0%,
+    rgba(249, 245, 188, 1) 0%,
+    rgba(119, 232, 255, 1) 100%
+  );
+  border-radius: 5px;
+  margin: 2rem 0 2rem 2.9rem;
+  width: 60%;
+  padding: 1rem;
+  text-align: center;
+}
+.compTitle {
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.firstLine {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.secondLine {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+  font-size: 14px;
+}
+
+.deletStyle {
+  border-radius: 3px;
+  width: 40vw;
+  background-color: rgb(247, 131, 150);
+  border: none;
+  height: 2rem;
+}
+
+.addStyle {
+  border-radius: 3px;
+  width: 40vw;
+  background-color: rgb(171, 171, 230);
+  border: none;
+  height: 2rem;
+}
+
+@media print {
+  /* remove any screen only styles, for example link underline */
+}
+
+@page {
+  padding: 0;
+  margin: 0cm;
+  size: A4 portrait;
+}
+
+@media (max-width: 800px) {
+  .App {
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    display: list-item;
+  }
+
+  h1 {
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 250;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  .editable {
+    background-color: rgb(245, 210, 245);
+    width: 100%;
+    max-height: 100vh;
+    text-align: center;
+    overflow-y: auto;
+  }
+
+  .final {
+    background-color: rgb(224, 205, 243);
+    width: 100% !important;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+  section {
+    text-align: center;
+    margin: 1rem;
+  }
+  .container {
+    display: list-item;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "cvName"
+      "image"
+      "cvMainInfo"
+      "cvJobs"
+      "cvStudies"
+      "cvInterests";
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image {
+    border-radius: 50%;
+    height: 100%;
+    width: 60%;
+    margin-left: 35%;
+  }
+  .picStyle {
+    border-radius: 50%;
+    height: 50%;
+    width: 25%;
+  }
+
+  .cvImg {
+    border-radius: 50%;
+  }
+
+  .emptyIntro {
+    background-color: rgb(171, 218, 245);
+    border-radius: 5px;
+    grid-area: cvMainInfo;
+    margin: 1rem 0 1rem 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 93%;
+  }
+  .emptyInfo {
+    background-color: rgb(211, 245, 171);
+    border-radius: 5px;
+    grid-area: cvMainInfo;
+    margin: 1rem 0 2rem 2rem;
+    padding: 1rem;
+    text-align: center;
+    width: 88%;
+  }
+  .emptyJobs {
+    grid-area: cvJobs;
+    background-color: rgb(230, 183, 252);
+    border-radius: 5px;
+    margin: 1rem 0 2rem 2rem;
+    padding-bottom: 1rem;
+    width: 88%;
+    height: 4rem;
+  }
+
+  .emptyStudies {
+    grid-area: cvJobs;
+    background-color: rgb(252, 183, 231);
+    border-radius: 5px;
+    margin: 0rem 0 1rem 2rem;
+    width: 88%;
+    height: 4rem;
+  }
+
+  .emptyInterests {
+    grid-area: cvInterests;
+    background-color: rgb(247, 232, 166);
+    border-radius: 5px;
+    margin: 2rem 0 2rem 2rem;
+    width: 60%;
+    padding: 1rem;
+    text-align: center;
+    width: 88%;
+  }
+}
