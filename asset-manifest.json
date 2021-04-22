@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/CV-app-hooks/static/css/main.2355b8e1.chunk.css",
+    "main.js": "/CV-app-hooks/static/js/main.e9ce9025.chunk.js",
+    "main.js.map": "/CV-app-hooks/static/js/main.e9ce9025.chunk.js.map",
+    "runtime-main.js": "/CV-app-hooks/static/js/runtime-main.d67ca6bd.js",
+    "runtime-main.js.map": "/CV-app-hooks/static/js/runtime-main.d67ca6bd.js.map",
+    "static/js/2.33e61461.chunk.js": "/CV-app-hooks/static/js/2.33e61461.chunk.js",
+    "static/js/2.33e61461.chunk.js.map": "/CV-app-hooks/static/js/2.33e61461.chunk.js.map",
+    "static/js/3.1b0a0ec4.chunk.js": "/CV-app-hooks/static/js/3.1b0a0ec4.chunk.js",
+    "static/js/3.1b0a0ec4.chunk.js.map": "/CV-app-hooks/static/js/3.1b0a0ec4.chunk.js.map",
+    "static/js/4.0897c072.chunk.js": "/CV-app-hooks/static/js/4.0897c072.chunk.js",
+    "static/js/4.0897c072.chunk.js.map": "/CV-app-hooks/static/js/4.0897c072.chunk.js.map",
+    "index.html": "/CV-app-hooks/index.html",
+    "static/css/main.2355b8e1.chunk.css.map": "/CV-app-hooks/static/css/main.2355b8e1.chunk.css.map",
+    "static/js/2.33e61461.chunk.js.LICENSE.txt": "/CV-app-hooks/static/js/2.33e61461.chunk.js.LICENSE.txt",
+    "static/js/3.1b0a0ec4.chunk.js.LICENSE.txt": "/CV-app-hooks/static/js/3.1b0a0ec4.chunk.js.LICENSE.txt",
+    "static/js/4.0897c072.chunk.js.LICENSE.txt": "/CV-app-hooks/static/js/4.0897c072.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d67ca6bd.js",
+    "static/js/3.1b0a0ec4.chunk.js",
+    "static/css/main.2355b8e1.chunk.css",
+    "static/js/main.e9ce9025.chunk.js"
+  ]
+}
