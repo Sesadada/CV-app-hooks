@@ -3,7 +3,6 @@ import CvStudy from './CvStudy'
 
 const Cv = (props) => {
     const {comments, name, lastName, address, phone, email, pic, interests} = props.dataForm
-    console.log(props.dataForm)
 
     const classChecker = (w, empty, full) => {
         if (!props.dataForm[w]) {

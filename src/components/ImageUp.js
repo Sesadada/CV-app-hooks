@@ -6,8 +6,6 @@ const [state, setState] = useState({
     newImage: localStorage.getItem('recent-image') || ''
   })
 
-
-
 const fileSelectedHandler = (e) => {
   const temp = e.target.files[0]
   const reader = new FileReader()
@@ -18,7 +16,6 @@ const fileSelectedHandler = (e) => {
       newImage: reader.result    }) 
   })
   reader.readAsDataURL(temp)
-  
 }
 
 
@@ -60,8 +57,6 @@ callBack.current = getPic
 
     return (
       <>
-
-
     <input style={{display: 'none'}} type='file' onChange={fileSelectedHandler} ref={hiddenFileInput}/>
     <button onClick={handleClick}>Pick Photo</button>
 
